@@ -1,0 +1,9 @@
+C:\Projetos\Ulbra\Lpc\Aula 2\Aula 2\Aula 2\bin\Debug\Aula 2.exe.config
+C:\Projetos\Ulbra\Lpc\Aula 2\Aula 2\Aula 2\bin\Debug\Aula 2.exe
+C:\Projetos\Ulbra\Lpc\Aula 2\Aula 2\Aula 2\bin\Debug\Aula 2.pdb
+C:\Projetos\Ulbra\Lpc\Aula 2\Aula 2\Aula 2\obj\Debug\Aula 2.csprojResolveAssemblyReference.cache
+C:\Projetos\Ulbra\Lpc\Aula 2\Aula 2\Aula 2\obj\Debug\Aula_2.Form1.resources
+C:\Projetos\Ulbra\Lpc\Aula 2\Aula 2\Aula 2\obj\Debug\Aula_2.Properties.Resources.resources
+C:\Projetos\Ulbra\Lpc\Aula 2\Aula 2\Aula 2\obj\Debug\Aula 2.csproj.GenerateResource.Cache
+C:\Projetos\Ulbra\Lpc\Aula 2\Aula 2\Aula 2\obj\Debug\Aula 2.exe
+C:\Projetos\Ulbra\Lpc\Aula 2\Aula 2\Aula 2\obj\Debug\Aula 2.pdb

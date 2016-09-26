@@ -1,0 +1,5 @@
+C:\Projetos\Ulbra\Lpc\Aula 6\Agenda\Utilitarios\bin\Debug\Utilitarios.dll
+C:\Projetos\Ulbra\Lpc\Aula 6\Agenda\Utilitarios\bin\Debug\Utilitarios.pdb
+C:\Projetos\Ulbra\Lpc\Aula 6\Agenda\Utilitarios\obj\Debug\Utilitarios.csprojResolveAssemblyReference.cache
+C:\Projetos\Ulbra\Lpc\Aula 6\Agenda\Utilitarios\obj\Debug\Utilitarios.dll
+C:\Projetos\Ulbra\Lpc\Aula 6\Agenda\Utilitarios\obj\Debug\Utilitarios.pdb
