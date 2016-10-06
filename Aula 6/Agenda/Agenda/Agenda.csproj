@@ -34,6 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -46,7 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\DataBase.cs" />
+    <Compile Include="Classes\BancoDeDados\DataBase.cs" />
     <Compile Include="Classes\DTO\UsuarioDTO.cs" />
     <Compile Include="Classes\Usuario.cs" />
     <Compile Include="Formularios\Cadastros\FrmUsuario.cs">
