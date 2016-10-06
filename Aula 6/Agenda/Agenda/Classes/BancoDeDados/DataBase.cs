@@ -1,10 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Configuration;
+using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Agenda.Classes
 {
@@ -59,11 +56,11 @@ namespace Agenda.Classes
                 Connection.Close();
         }
 
-        public SqlDataReader ExecutarDataReader(string querySQL, SqlParameter[] parameters)
+        public DataTable ExecutarDataSet(string querySQL, SqlParameter[] parameters)
         {
             if (AutoClose)
                 AbrirConexao();
-
+            
             var cmd = new SqlCommand(
                 querySQL,
                 Connection,
@@ -73,15 +70,16 @@ namespace Agenda.Classes
             if (parameters != null)
                 cmd.Parameters.AddRange(parameters);
 
-            var reader = cmd.ExecuteReader();
+            var adapter = new SqlDataAdapter(cmd);
+            var dsTable = new DataSet();
+            adapter.Fill(dsTable);
 
             if (AutoClose)
-            {
-                Commit();
+            {                
                 FecharConexao();
             }
 
-            return reader;
+            return dsTable.Tables[0];
 
         }
 

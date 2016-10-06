@@ -1,10 +1,8 @@
 ﻿using Agenda.Classes;
 using Agenda.Classes.DTO;
 using System;
-using Utilitarios.Retorno;
-using System.Collections.Generic;
-using System.Linq;
 using System.Windows.Forms;
+using Utilitarios.Retorno;
 using Utilitarios.Validacao;
 
 namespace Agenda.Formularios.Cadastros
@@ -20,8 +18,6 @@ namespace Agenda.Formularios.Cadastros
             LimparTopo();
             HabilitarTopo();
         }
-
-       
 
         private void HabilitarTopo()
         {
@@ -177,7 +173,7 @@ namespace Agenda.Formularios.Cadastros
         private void btnOk_Click(object sender, EventArgs e)
         {
             var usuario = new Usuario();
-
+            
             var objUsuario = usuario.Selecionar(int.Parse(txtCodigo.Text));
             if (objUsuario == null)
             {

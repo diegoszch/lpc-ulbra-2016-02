@@ -1,6 +1,6 @@
-﻿using System;
+﻿using Agenda.Classes;
+using System;
 using System.Windows.Forms;
-using Agenda.Classes;
 using Utilitarios.Validacao;
 
 namespace Agenda.Formularios.Util

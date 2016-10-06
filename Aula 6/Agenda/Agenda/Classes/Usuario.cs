@@ -1,5 +1,6 @@
 ﻿using Agenda.Classes.DTO;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Text;
 using Utilitarios.Retorno;
@@ -165,30 +166,54 @@ namespace Agenda.Classes
             );
             listaParam.Add(paramUsuario);
 
-            var reader = db.ExecutarDataReader(
+            var dataSet = db.ExecutarDataSet(
                 query.ToString(),
                 listaParam.ToArray()
             );
 
-
-
-            if (reader.HasRows)
+            if (dataSet.Rows.Count == 1)
             {
-                reader.Read();
-
+                DataRow pRow = dataSet.Rows[0];
+                
                 retorno = new UsuarioDTO
                 {
-                    Id = reader.GetInt32(0),
-                    Login = reader.GetString(1),
-                    Senha = reader.GetString(2),
-                    Nome = reader.GetString(3),
-                    Email = reader.GetString(4)
+                    Id = int.Parse(pRow["Id"].ToString()),
+                    Login = pRow["Login"].ToString(),
+                    Senha = pRow["Senha"].ToString(),
+                    Nome = pRow["Nome"].ToString(),
+                    Email = pRow["Email"].ToString()
                 };
             }
             
-            reader.Close();
+            return retorno;
+        }
 
+        public List<UsuarioDTO> SelecionarTodos()
+        {
+            var retorno = new List<UsuarioDTO>();
 
+            var query = new StringBuilder();
+            query.Append("SELECT Id, Login, Senha, Nome, Email FROM Usuario");
+            
+            var dataSet = db.ExecutarDataSet(
+                query.ToString(),
+                null
+            );
+
+            if (dataSet.Rows.Count > 0)
+            {
+                foreach (DataRow pRow in dataSet.Rows)
+                {
+                    retorno.Add(new UsuarioDTO
+                    {
+                        Id = int.Parse(pRow["Id"].ToString()),
+                        Login = pRow["Login"].ToString(),
+                        Senha = pRow["Senha"].ToString(),
+                        Nome = pRow["Nome"].ToString(),
+                        Email = pRow["Email"].ToString()
+                    });
+                }    
+            }
 
             return retorno;
         }
