@@ -4,7 +4,7 @@ using Utilitarios.Validacao;
 
 namespace Agenda.Classes
 {
-    public class Usuario
+    public class Usuario : DataBase
     {
         #region Metodos
 

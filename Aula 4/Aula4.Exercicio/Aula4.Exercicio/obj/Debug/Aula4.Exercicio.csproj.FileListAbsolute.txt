@@ -1,9 +1,0 @@
-C:\Projetos\Ulbra\Lpc\Aula 4\Aula4.Exercicio\Aula4.Exercicio\bin\Debug\Aula4.Exercicio.exe.config
-C:\Projetos\Ulbra\Lpc\Aula 4\Aula4.Exercicio\Aula4.Exercicio\bin\Debug\Aula4.Exercicio.exe
-C:\Projetos\Ulbra\Lpc\Aula 4\Aula4.Exercicio\Aula4.Exercicio\bin\Debug\Aula4.Exercicio.pdb
-C:\Projetos\Ulbra\Lpc\Aula 4\Aula4.Exercicio\Aula4.Exercicio\obj\Debug\Aula4.Exercicio.csprojResolveAssemblyReference.cache
-C:\Projetos\Ulbra\Lpc\Aula 4\Aula4.Exercicio\Aula4.Exercicio\obj\Debug\Aula4.Exercicio.FrmAvaliacao.resources
-C:\Projetos\Ulbra\Lpc\Aula 4\Aula4.Exercicio\Aula4.Exercicio\obj\Debug\Aula4.Exercicio.Properties.Resources.resources
-C:\Projetos\Ulbra\Lpc\Aula 4\Aula4.Exercicio\Aula4.Exercicio\obj\Debug\Aula4.Exercicio.csproj.GenerateResource.Cache
-C:\Projetos\Ulbra\Lpc\Aula 4\Aula4.Exercicio\Aula4.Exercicio\obj\Debug\Aula4.Exercicio.exe
-C:\Projetos\Ulbra\Lpc\Aula 4\Aula4.Exercicio\Aula4.Exercicio\obj\Debug\Aula4.Exercicio.pdb

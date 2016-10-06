@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\DataBase.cs" />
     <Compile Include="Classes\DTO\UsuarioDTO.cs" />
     <Compile Include="Classes\Usuario.cs" />
     <Compile Include="Formularios\Cadastros\FrmUsuario.cs">
