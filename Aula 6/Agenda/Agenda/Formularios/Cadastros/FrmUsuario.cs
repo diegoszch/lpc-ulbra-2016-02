@@ -224,6 +224,18 @@ namespace Agenda.Formularios.Cadastros
             }
         }
 
-
+        private void btnPesquisar_Click(object sender, EventArgs e)
+        {
+            FrmUsuarioPesquisa frmPesquisa = new FrmUsuarioPesquisa();
+            var resultado = frmPesquisa.ShowDialog();
+            if(resultado == DialogResult.OK)
+            {
+                var dto = frmPesquisa.GetUsuarioDto();
+                if(dto != null)
+                {
+                    txtCodigo.Text = dto.Id.ToString();
+                }
+            }            
+        }
     }
 }

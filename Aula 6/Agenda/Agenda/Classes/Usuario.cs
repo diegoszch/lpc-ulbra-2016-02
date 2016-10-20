@@ -1,4 +1,5 @@
-﻿using Agenda.Classes.DTO;
+﻿using Agenda.Classes.BancoDeDados;
+using Agenda.Classes.DTO;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
@@ -218,6 +219,8 @@ namespace Agenda.Classes
             return retorno;
         }
 
+        
+
         public RetornoMensagens ValidarEntidade(UsuarioDTO usuarioDTO)
         {
             var retorno = new RetornoMensagens();
@@ -248,6 +251,28 @@ namespace Agenda.Classes
             }
 
             return retorno;
+        }
+
+        public DataTable FiltroRetornoDataTable(Filtro filtro)
+        {
+            
+            var query = new StringBuilder();
+            query.Append("SELECT Id, Login, Senha, Nome, Email FROM Usuario WHERE 1 = 1 ");
+
+            if(filtro != null)
+            {
+                foreach (var item in filtro.GetFiltros())
+                {
+                    query.AppendFormat(" AND {0} ", item);
+                }
+            }
+            
+            var dataTable = db.ExecutarDataSet(
+                query.ToString(),
+                null
+            );
+            
+            return dataTable;
         }
 
         #endregion

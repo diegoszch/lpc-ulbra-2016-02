@@ -2,6 +2,10 @@ create database Agenda
 
 go
 
+use Agenda
+
+go
+
 CREATE TABLE [dbo].[Usuario] (
     [Id]    INT         IDENTITY (1, 1) NOT NULL,
     [Login] NVARCHAR(60)  NOT NULL,

@@ -46,6 +46,7 @@
             this.txtNome = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnPesquisar = new System.Windows.Forms.Button();
             this.grpTopo.SuspendLayout();
             this.grpCorpo.SuspendLayout();
             this.SuspendLayout();
@@ -97,6 +98,7 @@
             // 
             // grpTopo
             // 
+            this.grpTopo.Controls.Add(this.btnPesquisar);
             this.grpTopo.Controls.Add(this.btnNovo);
             this.grpTopo.Controls.Add(this.btnOk);
             this.grpTopo.Controls.Add(this.txtDescricao);
@@ -104,7 +106,7 @@
             this.grpTopo.Controls.Add(this.label1);
             this.grpTopo.Location = new System.Drawing.Point(6, 7);
             this.grpTopo.Name = "grpTopo";
-            this.grpTopo.Size = new System.Drawing.Size(529, 64);
+            this.grpTopo.Size = new System.Drawing.Size(614, 64);
             this.grpTopo.TabIndex = 1;
             this.grpTopo.TabStop = false;
             // 
@@ -124,7 +126,7 @@
             this.grpCorpo.Enabled = false;
             this.grpCorpo.Location = new System.Drawing.Point(6, 77);
             this.grpCorpo.Name = "grpCorpo";
-            this.grpCorpo.Size = new System.Drawing.Size(529, 168);
+            this.grpCorpo.Size = new System.Drawing.Size(614, 168);
             this.grpCorpo.TabIndex = 2;
             this.grpCorpo.TabStop = false;
             // 
@@ -140,7 +142,7 @@
             // 
             // btnSalvar
             // 
-            this.btnSalvar.Location = new System.Drawing.Point(433, 136);
+            this.btnSalvar.Location = new System.Drawing.Point(522, 136);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(84, 23);
             this.btnSalvar.TabIndex = 4;
@@ -150,7 +152,7 @@
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(343, 136);
+            this.btnCancelar.Location = new System.Drawing.Point(432, 136);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(84, 23);
             this.btnCancelar.TabIndex = 5;
@@ -223,11 +225,21 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Nome do usuário";
             // 
+            // btnPesquisar
+            // 
+            this.btnPesquisar.Location = new System.Drawing.Point(523, 20);
+            this.btnPesquisar.Name = "btnPesquisar";
+            this.btnPesquisar.Size = new System.Drawing.Size(84, 23);
+            this.btnPesquisar.TabIndex = 3;
+            this.btnPesquisar.Text = "Pesquisar";
+            this.btnPesquisar.UseVisualStyleBackColor = true;
+            this.btnPesquisar.Click += new System.EventHandler(this.btnPesquisar_Click);
+            // 
             // FrmUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(541, 252);
+            this.ClientSize = new System.Drawing.Size(624, 252);
             this.Controls.Add(this.grpCorpo);
             this.Controls.Add(this.grpTopo);
             this.Name = "FrmUsuario";
@@ -260,5 +272,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnExcluir;
+        private System.Windows.Forms.Button btnPesquisar;
     }
 }
